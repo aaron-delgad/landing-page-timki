@@ -1,0 +1,56 @@
+<div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 shadow-sm rounded-2xl border border-gray-100">
+
+    <div class="mb-8">
+      <a routerLink="/" class="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        Volver al inicio
+      </a>
+    </div>
+
+    <header class="border-b pb-6 mb-8">
+      <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">Términos y Condiciones de Uso</h1>
+      <p class="mt-2 text-sm text-gray-500 italic">Última actualización: Marzo {{ currentYear }}</p>
+    </header>
+
+    <div class="space-y-8 text-gray-700 leading-relaxed">
+
+      <section>
+        <h2 class="text-xl font-bold text-gray-900 mb-3">1. Aceptación de los Términos</h2>
+        <p>
+          Al acceder y utilizar la plataforma <strong>timkyDelivery</strong>, propiedad y operada por <strong>Nexo Technologies</strong>, el usuario acepta de manera íntegra y sin reservas los presentes términos. Este servicio está diseñado exclusivamente para la gestión de pedidos y logística de entregas a domicilio.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-gray-900 mb-3">2. Registro y Seguridad de la Cuenta</h2>
+        <p>
+          Para el uso de las funciones avanzadas, el usuario podrá autenticarse mediante <strong>Facebook Login</strong>. El usuario es el único responsable de la confidencialidad de su cuenta. Nexo Technologies empleará el número de celular proporcionado para la validación de identidad mediante códigos <strong>OTP (One-Time Password) enviados vía WhatsApp</strong>.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-gray-900 mb-3">3. Limitación de Responsabilidad</h2>
+        <p>
+          Nexo Technologies actúa como un intermediario tecnológico entre el comercio y el consumidor final. Los tiempos de preparación, la calidad de los productos y la exactitud de los pedidos son responsabilidad directa del comercio aliado. No obstante, nos comprometemos a mediar para garantizar la satisfacción del servicio.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-gray-900 mb-3">4. Ley Aplicable y Jurisdicción</h2>
+        <p>
+          Estos términos se rigen bajo las leyes vigentes de la <strong>República del Perú</strong>. Ante cualquier controversia derivada del uso del servicio, las partes se someten a la competencia de los tribunales correspondientes al domicilio fiscal de la empresa en Perú.
+        </p>
+      </section>
+
+    </div>
+
+    <footer class="mt-12 pt-8 border-t text-center">
+      <p class="text-sm text-gray-400">
+        &copy; {{ currentYear }} Nexo Technologies. RUC {{ rucNumber }}.<br>
+        Todos los derechos reservados.
+      </p>
+    </footer>
+
+  </div>
+</div>

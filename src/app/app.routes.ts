@@ -9,5 +9,9 @@ export const routes: Routes = [
     path: 'politica-de-privacidad',
     loadComponent: () => import('./privacy-policy.component/privacy-policy.component').then(m => m.PrivacyPolicyComponent)
   },
+  {
+    path: 'terms-conditions',
+    loadComponent: () => import('./terms.component/terms.component').then(m => m.TermsComponent)
+  },
   { path: '**', redirectTo: '' }
 ];
