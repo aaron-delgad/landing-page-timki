@@ -13,5 +13,9 @@ export const routes: Routes = [
     path: 'terms-conditions',
     loadComponent: () => import('./terms.component/terms.component').then(m => m.TermsComponent)
   },
+  {
+    path: 'soporte/:app',
+    loadComponent: () => import('./support.component/support.component').then(m => m.SupportComponent)
+  },
   { path: '**', redirectTo: '' }
 ];

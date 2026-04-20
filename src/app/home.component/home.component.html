@@ -1,67 +1,113 @@
 <div class="min-h-screen bg-gray-50 flex flex-col font-sans text-gray-800">
-  <nav class="bg-white shadow-sm py-4">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-blue-600 tracking-tight">
+
+  <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50 transition-all">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-[#3C8DFF] tracking-tight cursor-pointer" routerLink="/">
         Nexo Technologies
       </div>
-      <a href="mailto:admin@timkidelivery.com" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition">
-        Soporte
-      </a>
+
+      <div class="flex items-center gap-6">
+        <div class="relative group">
+          <button class="text-sm font-medium text-gray-600 hover:text-[#3C8DFF] transition-colors flex items-center gap-1 pb-2 md:pb-0">
+            Soporte
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+
+          <div class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden transform origin-top-right scale-95 group-hover:scale-100">
+            <a routerLink="/soporte/cliente" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#10B981] border-b border-gray-50 transition-colors">
+              Timki Clientes
+            </a>
+            <a routerLink="/soporte/negocio" class="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3C8DFF] border-b border-gray-50 transition-colors">
+              Timki Negocios
+            </a>
+            <a routerLink="/soporte/repartidor" class="block px-4 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-[#FF6F3C] transition-colors">
+              Timki Repartidores
+            </a>
+          </div>
+        </div>
+
+        <a href="mailto:admin@timkidelivery.com" class="hidden md:inline-flex px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition shadow-sm">
+          Contáctanos
+        </a>
+      </div>
     </div>
   </nav>
 
-  <main class="flex-grow flex items-center justify-center py-20 px-4">
-    <div class="max-w-3xl text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-        Innovación y Desarrollo de Software
-      </h1>
-      <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-        Somos creadores de soluciones digitales eficientes. Próximamente el lanzamiento oficial de nuestra plataforma principal:
-        <strong class="text-blue-600">timkyDelivery</strong>.
-      </p>
+  <div class="pt-20"></div>
 
-      <div class="bg-white rounded-xl shadow-md p-8 text-left max-w-lg mx-auto border border-gray-100">
-        <h2 class="text-xl font-semibold border-b pb-3 mb-4">Información de Contacto</h2>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-center">
-            <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-            </svg>
-            admin@timkidelivery.com
-          </li>
-          <li class="flex items-center">
-            <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-            </svg>
-            +51 984455908
-          </li>
-        </ul>
+  <main class="flex-grow flex items-center py-16 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <div class="text-center lg:text-left">
+        <span class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold mb-6 border border-blue-100">
+          Próximamente
+        </span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+          El ecosistema <br/>
+          <span class="text-[#3C8DFF]">logístico perfecto.</span>
+        </h1>
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
+          En Nexo Technologies creamos soluciones digitales eficientes. Prepárate para el lanzamiento oficial de <strong>Timki Delivery</strong>, nuestra plataforma diseñada para conectar clientes, comercios y repartidores.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+          <a href="https://apps.apple.com/app/id6762577623" target="_blank" class="transition-transform hover:scale-105" title="Próximamente en App Store">
+            <img src="/app-store.svg" alt="Descarga Timki Delivery en App Store" class="h-14 w-auto drop-shadow-sm">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=pe.com.xpress" target="_blank" class="transition-transform hover:scale-105" title="Próximamente en Google Play">
+            <img src="/google-play.svg" alt="Descarga Timki Delivery en Google Play" class="h-14 w-auto drop-shadow-sm">
+          </a>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 inline-block text-left w-full max-w-md">
+          <p class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Información de Contacto</p>
+          <div class="space-y-4 text-gray-700">
+            <a href="mailto:admin@timkidelivery.com" class="flex items-center hover:text-[#3C8DFF] transition">
+              <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              admin&#64;timkidelivery.com
+            </a>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              +51 984455908
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="relative hidden md:block">
+        <div class="absolute inset-0 bg-gradient-to-tr from-blue-100 to-orange-50 rounded-full blur-3xl opacity-50 transform scale-110"></div>
+        <img src="/iphones.png" alt="Timki Apps Mockup" class="relative z-10 w-full h-auto drop-shadow-2xl hover:-translate-y-2 transition-transform duration-500">
+      </div>
+
     </div>
   </main>
 
-  <footer class="bg-gray-900 text-gray-300 py-10">
-    <div class="max-w-6xl mx-auto px-4 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
+  <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-start">
 
-      <div class="text-sm">
-        <p class="font-semibold text-white text-base mb-1">Nexo Technologies</p>
-        <p>Representante Legal: Raul Aaron Delgado Esparraga</p>
-        <p>RUC: 10719833115</p>
-        <p>Dirección Fiscal: Jr.Triunfo 351, Cajaruro, Cajaruro, Perú</p>
+      <div class="text-sm text-center md:text-left space-y-1">
+        <p class="font-bold text-white text-lg mb-3">Nexo Technologies</p>
+        <p class="text-gray-400">Rep. Legal: Raul Aaron Delgado Esparraga</p>
+        <p class="text-gray-400">RUC: 10719833115</p>
+        <p class="text-gray-400 mt-2">Jr. Triunfo 351, Cajaruro, Perú</p>
       </div>
 
-      <div class="text-sm text-center md:text-right">
-        <p class="mb-3">&copy; {{ currentYear() }} Nexo Technologies. Todos los derechos reservados.</p>
+      <div class="text-sm text-center md:text-left space-y-3">
+        <p class="font-bold text-white text-base mb-3">Centro de Ayuda</p>
+        <ul class="space-y-2 flex flex-col items-center md:items-start">
+          <li><a routerLink="/soporte/cliente" class="text-gray-400 hover:text-[#3C8DFF] transition-colors">Soporte para Clientes</a></li>
+          <li><a routerLink="/soporte/negocio" class="text-gray-400 hover:text-[#10B981] transition-colors">Soporte para Negocios</a></li>
+          <li><a routerLink="/soporte/repartidor" class="text-gray-400 hover:text-[#FF6F3C] transition-colors">Soporte para Repartidores</a></li>
+        </ul>
+      </div>
 
-        <div class="flex flex-wrap justify-center md:justify-end gap-4">
-          <a routerLink="/politica-de-privacidad" class="text-blue-400 hover:text-blue-300 underline transition-colors">
-            Política de Privacidad
-          </a>
-          <span class="text-gray-600 hidden md:inline">|</span>
-          <a routerLink="/terms-conditions" class="text-blue-400 hover:text-blue-300 underline transition-colors">
-            Términos y Condiciones
-          </a>
+      <div class="text-sm flex flex-col items-center md:items-end space-y-4">
+        <p class="font-bold text-white text-base mb-1">Legales</p>
+        <div class="flex flex-col items-center md:items-end gap-2">
+          <a routerLink="/politica-de-privacidad" class="text-gray-400 hover:text-white transition-colors">Política de Privacidad</a>
+          <a routerLink="/terms-conditions" class="text-gray-400 hover:text-white transition-colors">Términos y Condiciones</a>
         </div>
+        <p class="text-gray-500 mt-4">&copy; {{ currentYear() }} Nexo Technologies. Todos los derechos reservados.</p>
       </div>
 
     </div>
