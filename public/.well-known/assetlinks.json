@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "pe.com.xpress",
+    "sha256_cert_fingerprints": ["48:01:9C:C0:17:56:6D:1F:2B:DE:B7:0B:EA:69:82:1D:03:19:3C:8F:2A:18:BE:CD:91:4B:EE:36:33:81:7E:95"]
+  }
+}]

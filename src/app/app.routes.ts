@@ -17,5 +17,9 @@ export const routes: Routes = [
     path: 'soporte/:app',
     loadComponent: () => import('./support.component/support.component').then(m => m.SupportComponent)
   },
-  { path: '**', redirectTo: '' }
+  {
+    path: 'main/operation/productDetail/:productId',
+    loadComponent: () => import('./pedido-redirect.component/pedido-redirect.component').then(m => m.PedidoRedirectComponent)
+  },
+  { path: '**', redirectTo: '' },
 ];
