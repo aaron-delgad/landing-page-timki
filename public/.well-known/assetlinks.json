@@ -3,6 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "pe.com.xpress",
-    "sha256_cert_fingerprints": ["48:01:9C:C0:17:56:6D:1F:2B:DE:B7:0B:EA:69:82:1D:03:19:3C:8F:2A:18:BE:CD:91:4B:EE:36:33:81:7E:95"]
+    "sha256_cert_fingerprints": ["48:01:9C:C0:17:56:6D:1F:2B:DE:B7:0B:EA:69:82:1D:03:19:3C:8F:2A:18:BE:CD:91:4B:EE:36:33:81:7E:95", "2C:37:DB:76:E6:A0:81:A5:19:CC:AC:39:F7:AA:E1:93:03:33:51:19:2C:6E:5D:72:45:2E:65:8D:61:AF:26:A3"]
   }
 }]
